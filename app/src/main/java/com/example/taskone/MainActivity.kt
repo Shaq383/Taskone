@@ -16,10 +16,11 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+
             TaskOneTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Android")
+                    Greeting("Android, My name Shaquil Fathza Nasution")
                 }
             }
         }
@@ -38,6 +39,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     TaskOneTheme {
-        Greeting("Android")
+        Greeting("Android, My name Shaquil Fathza Nasution")
     }
 }
