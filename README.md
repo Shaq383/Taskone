@@ -19,11 +19,11 @@ Indonesian:
 
 Dalam projek ini saya telah mengimplementasikan fitur navigasi, textfield, dan counter data. Navigasi yang digunakan pada projek pertama saya hanya 3 yaitu Home, Profile, dan Setting.
 -   Home: Page ini merupakan destinasi pertama navigasi page pada projek android studio saya, pada page ini terdepat beberapa fitur dan User Experience/UI yang telah saya implementasikan, yaitu:
-   -   Navbar yang berisikan nama page yang sedang diakses,
-   -   Textfield nama sebagai tempat pengguna menginput nama mereka,
-   -   Data counter umur sebagai tempat pengguna menginput umur mereka,
-   -   Tombol profil sebagai tombol navigasi untuk berpindah ke page profil, dan
-   -   Tombol pengaturan sebagai tombol navigasi untuk berpindah ke page pengaturan.
+      -   Navbar yang berisikan nama page yang sedang diakses,
+      -   Textfield nama sebagai tempat pengguna menginput nama mereka,
+      -   Data counter umur sebagai tempat pengguna menginput umur mereka,
+      -   Tombol profil sebagai tombol navigasi untuk berpindah ke page profil, dan
+      -   Tombol pengaturan sebagai tombol navigasi untuk berpindah ke page pengaturan.
    
 -   Profile: Page ini merupakan tempat dimana data yang telah diinput pada textfield nama dan data umur yang dipilih akan disampaikan dan ditampilkan. Pada page ini juga terdapat navbar yang berisikan nama page yang sedang diakses,
 
