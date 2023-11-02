@@ -10,6 +10,7 @@ In this project, I have implemented navigation features, textfields, and data co
     -  Data counter for users to input their age,
     -  Profile button for navigation to the profile page, and
     -  Settings button for navigation to the settings page.
+
 -  Profile: This page is where the data entered in the name textfield and the selected age data will be passed and displayed. In this page there's also navbar containing the name of the currently accessed page,
 -  Settings: This page is where the data entered/selected in the age data counter will be displayed. In this page there's also navbar containing the name of the currently accessed page.
 
@@ -23,5 +24,6 @@ Dalam projek ini saya telah mengimplementasikan fitur navigasi, textfield, dan c
     -  Data counter umur sebagai tempat pengguna menginput umur mereka,
     -  Tombol profil sebagai tombol navigasi untuk berpindah ke page profil, dan
     -  Tombol pengaturan sebagai tombol navigasi untuk berpindah ke page pengaturan.
+
 -  Profile: Page ini merupakan tempat dimana data yang telah diinput pada textfield nama dan data umur yang dipilih akan disampaikan dan ditampilkan. Pada page ini juga terdapat navbar yang berisikan nama page yang sedang diakses,
 -  Settings: Page ini merupakan tempat dimana data yang diinput/dipilih pada counter data umur akan ditampilkan. Pada page ini juga terdapat navbar yang berisikan nama page yang sedang diakses.
