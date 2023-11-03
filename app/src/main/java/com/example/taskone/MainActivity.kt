@@ -3,42 +3,43 @@ package com.example.taskone
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.taskone.ui.theme.TaskOneTheme
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import com.example.taskone.screens.Home
+import com.example.taskone.screens.Profile
+import com.example.taskone.screens.Setting
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-
-            TaskOneTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Android, My name Shaquil Fathza Nasution")
-                }
+            Surface(color = MaterialTheme.colorScheme.background) {
+                ScreenMain()
             }
         }
     }
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-            text = "Hello $name!",
-            modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    TaskOneTheme {
-        Greeting("Android, My name Shaquil Fathza Nasution")
+fun ScreenMain() {
+    val navController = rememberNavController()
+    NavHost(navController = navController, startDestination = Routes.Home.route) {
+        composable(Routes.Home.route) {
+            Home(navController = navController)
+        }
+        composable("${Routes.Profile.route}?name={name}&age={age}") {
+            val name = it.arguments?.getString("name")
+            val age = it.arguments?.getString("age")
+            Profile(name = name, age = age)
+        }
+        composable(Routes.Settings.route + "/{id}") { navBackStack ->
+            val age = navBackStack.arguments?.getString("id")
+            Setting(age = age)
+        }
     }
 }
