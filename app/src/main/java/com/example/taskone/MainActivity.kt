@@ -37,9 +37,8 @@ fun ScreenMain() {
             val age = it.arguments?.getString("age")
             Profile(name = name, age = age)
         }
-        composable(Routes.Settings.route + "/{id}") { navBackStack ->
-            val age = navBackStack.arguments?.getString("id")
-            Setting(age = age)
+        composable(Routes.Settings.route) {
+            Setting()
         }
     }
 }
